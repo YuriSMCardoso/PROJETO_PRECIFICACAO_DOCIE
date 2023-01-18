@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precificação Dociê</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Imagens/Icones/favicon-bolo.ico">
+</head>
+<body>
+    <header>
+        <img src="./Imagens/Icones/logoDocie.PNG" alt="Logo da Dociê">
+    </header>
+    <main class="card-precificacao">
+        <table>
+            <!-- CABEÇALHO DA TABELA DE PRECIFICAÇÃO -->
+            <tr>
+                <th id="idColunaNomeIngrediente">Nome do Ingrediente</th>
+                <th>Quantidade Usada</th>
+                <th>Quantidade Total</th>
+                <th>Preço de Compra</th>
+                <th class="colunaCustoIngrediente">Custo do Ingrediente</th>
+                <th></th>
+            </tr>
+
+            <!--LINHA 1 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL1">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL1">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL1" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL1"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL1" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL1"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL1">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL1">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL1">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL1">
+                </td>
+            </tr>
+
+            <!--LINHA 2 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL2">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL2">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL2" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL2"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL2" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL2"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL2">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL2">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL2">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL2">
+                </td>
+            </tr>
+
+            <!--LINHA 3 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL3">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL3">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL3" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL3"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL3" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL3"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL3">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL3">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL3">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL3">
+                </td>
+            </tr>
+
+            <!--LINHA 4 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL4">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL4">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL4" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL4"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL4" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL4"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL4">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL4">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL4">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL4">
+                </td>
+            </tr>
+
+            <!--LINHA 5 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL5">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL5">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL5" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL5"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL5" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL5"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL5">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL5">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL5">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL5">
+                </td>
+            </tr>
+
+            <!--LINHA 6 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL6">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL6">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL6" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL6"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL6" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL6"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL6">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL6">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL6">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL6">
+                </td>
+            </tr>
+
+            <!--LINHA 7 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL7">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL7">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL7" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL7"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL7" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL7"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL7">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL7">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL7">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL7">
+                </td>
+            </tr>
+
+            <!--LINHA 8 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL8">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL8">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL8" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL8"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL8" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL8"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL8">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL8">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL8">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL8">
+                </td>
+            </tr>
+
+            <!--LINHA 9 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL9">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL9">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL9" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL9"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL9" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL9"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL9">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL9">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL9">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL9">
+                </td>
+            </tr>
+
+            <!--LINHA 10 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL10">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL10">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL10" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL10"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL10" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL10"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL10">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL10">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL10">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL10">
+                </td>
+            </tr>
+
+            <!--LINHA 11 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL11">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL11">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL11" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL11"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL11" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL11"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL11">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL11">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL11">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL11">
+                </td>
+            </tr>
+
+            <!--LINHA 12 DA TABELA DE PRECIFICAÇÃO-->
+
+            <!--LINHA 11 DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td>
+                    <input type="text" class="input-nome-ingrediente" placeholder="Digite aqui o nome do ingrediente" id="idNomeIngredienteL12">
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeUsadaL12">
+                    <select name="medida" id="idUnidadeMedidaQuantidadeUsadaL12" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="0" max="9000" class="input-numerico" placeholder="0" id="idQuantidadeTotalL12"> 
+                    <select name="medida" id="idUnidadeMedidaQuantidadeTotalL12" class="input-select">
+                        <option selected>g</option>
+                        <option>kg</option>
+                        <option>ml</option>
+                        <option>L</option>
+                        <option>Und.</option>
+                    </select>
+                </td>
+                <td>
+                    <p>R$<input type="text" min="0" placeholder="0,00" class="input-texto" id="idPrecoCompraL12"></p>
+                </td>
+                <td class="colunaCustoIngrediente">
+                    <p id="celulaCustoIngredienteL12">R$ 0,00</p>
+                </td>
+                <td id="celulaBotaoPrecificarL12">
+                    <input type="button" value="Precificar" class="input-button" id="btPrecificarL12">
+                    <input type="button" value=" Atualizar" class="input-button-oculto" id="btAtualizarL12">
+                </td>
+            </tr>
+
+            <!--LINHA DE TOTAL DA TABELA DE PRECIFICAÇÃO-->
+
+            <tr>
+                <td colspan="6" id="colunaValorTotal"><p>Custo total da receita: R$ 0,00</p></td>
+            </tr>
+            
+        </table>
+        <script src="./JavaScript/main.js"></script>
+    </main>
+
+    <footer>
+        <img src="./Imagens/Icones/icone-bolo.svg">
+        <p>Created by Yuri Cardoso</p>
+    </footer>
+    
+</body>
+</html>
